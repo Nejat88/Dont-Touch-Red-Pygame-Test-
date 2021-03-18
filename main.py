@@ -26,7 +26,7 @@ class Bullet:
 		self.rect=rect
 
 #Bullet vars
-bulletSpeed=250
+bulletSpeed=180
 bullets=[]
 bullet_image=pygame.image.load("Bullet.png")
 bullet_image.set_colorkey((255,255,255))
