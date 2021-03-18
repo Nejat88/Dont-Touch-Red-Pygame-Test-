@@ -26,7 +26,7 @@ class Bullet:
 		self.rect=rect
 
 #Bullet vars
-bulletSpeed=200
+bulletSpeed=250
 bullets=[]
 bullet_image=pygame.image.load("Bullet.png")
 bullet_image.set_colorkey((255,255,255))
@@ -107,6 +107,7 @@ def PlayerCollision():
 			pygame.quit()
 
 while isrunning:
+	bullet_speed+=0.1
 	PlayMusic()
 	pygame.time.Clock().tick(60)
 	for event in pygame.event.get():
