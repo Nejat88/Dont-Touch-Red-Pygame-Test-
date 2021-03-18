@@ -107,7 +107,7 @@ def PlayerCollision():
 			pygame.quit()
 
 while isrunning:
-	bullet_speed+=0.1
+	bulletSpeed+=0.1
 	PlayMusic()
 	pygame.time.Clock().tick(60)
 	for event in pygame.event.get():
