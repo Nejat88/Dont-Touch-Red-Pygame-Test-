@@ -12,7 +12,7 @@ playerPos=[200,150]
 inputAxis=[0,0]
 playerSpeed=150
 prev_time = time.time()
-player_rect=pygame.Rect(playerPos[0],playerPos[1],18,18)
+player_rect=pygame.Rect(playerPos[0],playerPos[1],16,16)
 dt = 0
 
 pygame.mixer.music.load("A.wav")
@@ -97,8 +97,8 @@ def PlayerMovement():
 
 	playerPos[0]+=inputAxis[0]*playerSpeed*dt
 	playerPos[1]+=inputAxis[1]*playerSpeed*dt
-	player_rect.x=playerPos[0]
-	player_rect.y=playerPos[1]
+	player_rect.x=playerPos[0]+4
+	player_rect.y=playerPos[1]+4
 
 def PlayerCollision():
 	for bullet in bullets:
